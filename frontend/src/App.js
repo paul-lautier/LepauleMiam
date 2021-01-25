@@ -1,5 +1,5 @@
 import React from 'react';
-import Product from './components/Product';
+import Restaurant from './components/Restaurant';
 import data from './data';
 function App() {
   return (
@@ -18,8 +18,8 @@ function App() {
       <main>
         <div>
           <div className="row center">
-            {data.products.map((product) => (
-              <Product key={product._id} product={product}></Product>
+            {data.restaurant.map((restaurant) => (
+              <Restaurant key={restaurant._id} restaurant={restaurant}></Restaurant>
              
             ))}
           </div>
