@@ -26,7 +26,7 @@ const data = {
             _id:'3',
             name:'Menu 3',
             image:'/images/p3.jpg',
-            price:15,
+            price:55,
             restaurant:'dominos',
             rating:5,
             numReviews:56,

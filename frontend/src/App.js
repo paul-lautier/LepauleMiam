@@ -6,7 +6,7 @@ function App() {
       <header className="row">
         <div>
           <a className="brand" href="/">
-            amazona
+            L'épauleMiam
           </a>
         </div>
         <div>
