@@ -34,6 +34,14 @@ html {
     color: #ffffff;
   }
   /* Common */
+  h1{
+      font-size: 1.8rem;
+      padding: 1rem 0;
+    }
+    h2{
+        font-size: 1.6rem;
+        padding: 1rem 0;
+    }
   a {
     text-decoration: none;
   }
@@ -72,5 +80,23 @@ html {
       border:0.1rem gray solid;
       background-color: #f8f8f8;
       border-radius: 0.5rem;
+      margin: 1rem;
 
+
+  }
+  .card-body{
+      padding: 1rem;
+
+  }
+  .card-body > *{
+      margin-bottom: 0.5rem;
+
+  }
+  .price{
+      font-size: 2rem;
+  }
+
+  .rating span{
+      color: gold;
+      margin: 0.1rem;
   }
