@@ -1,8 +1,11 @@
 import React from 'react';
-import Restaurant from './components/Restaurant';
-import data from './data';
+import { BrowserRouter, Route } from 'react-router-dom'
+import HomeScreen from './screens/HomeScreen';
+import ProductScreen from './screens/ProductScreen';
+
 function App() {
   return (
+    <BrowserRouter>
     <div className="grid-container">
       <header className="row">
         <div>
@@ -16,17 +19,12 @@ function App() {
         </div>
       </header>
       <main>
-        <div>
-          <div className="row center">
-            {data.restaurant.map((restaurant) => (
-              <Restaurant key={restaurant._id} restaurant={restaurant}></Restaurant>
-             
-            ))}
-          </div>
-        </div>
+        <Route path="/product/:id" component={ProductScreen}></Route>
+        <Route path="/" component={HomeScreen}exact></Route>
       </main>
       <footer className="row center">All right reserved</footer>
     </div>
+    </BrowserRouter>
   );
 }
 

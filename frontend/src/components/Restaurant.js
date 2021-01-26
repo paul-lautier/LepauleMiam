@@ -5,8 +5,8 @@ import Rating from './Rating'
 export default function Restaurant(props) {
     const { restaurant } = props
     return (
-<div key={restaurant._id} className="card">
-      <a href={`/restaurant/${restaurant._id}`}>
+<div key={restaurant._id_r} className="card">
+      <a href={`/product/${restaurant._id_r}`}>
         <img className="medium" src={restaurant.logo} alt={restaurant.name} />
       </a>
       <div className="card-body">
