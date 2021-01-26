@@ -8,8 +8,8 @@ const data = {
             enStock:"1",
             price:12,
             restaurant:'Mc Donalds',
-            rating_p:4,
-            numReviews_p:100,
+            rating:4,
+            numReviews:100,
             description:'triple cheese burger avec frites'
 
         },
@@ -21,8 +21,8 @@ const data = {
             enStock:"0",
             price:10,
             restaurant:"O'tacos",
-            rating_p:4.5,
-            numReviews_p:96,
+            rating:4.5,
+            numReviews:96,
             description:'tacos 3 viandes'
 
         },
