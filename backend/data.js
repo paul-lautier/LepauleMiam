@@ -26,6 +26,19 @@ const data = {
             description:'tacos 3 viandes'
 
         },
+        {
+            _id:'3',
+            restaurantId:'2',
+            name:'Menu 3',
+            image:'/images/p3.jpg',
+            enStock:"5",
+            price:10,
+            restaurant:"O'tacos",
+            rating:4,
+            numReviews:66,
+            description:'tacos 3 viandes'
+
+        },
         
     ],
 
