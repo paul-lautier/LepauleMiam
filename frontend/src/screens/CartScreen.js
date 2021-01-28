@@ -85,8 +85,8 @@ export default function CartScreen(props) {
           <ul>
             <li>
               <h2>
-                Total ({cartItems.reduce((a, c) => a + c.NB, 0)} objets) : 
-                {cartItems.reduce((a, c) => a + c.prix * c.NB, 0)}€
+                Total ({cartItems.reduce((a, c) => a + c.NB, 0)} objets) :  
+                 {cartItems.reduce((a, c) => a + c.prix * c.NB, 0)} €
               </h2>
             </li>
             <li>
