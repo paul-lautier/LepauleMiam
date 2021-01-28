@@ -2,10 +2,10 @@ const data = {
     products : [
         {
             _id:'1',
-            restaurantId:'1',
+            restaurantId:'6',
             name:'Menu 1',
             image:'/images/p1.jpg',
-            enStock:"1",
+            enStock:"5",
             price:12,
             restaurant:'Mc Donalds',
             rating:4,
