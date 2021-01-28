@@ -1,12 +1,33 @@
+import bcrypt from 'bcryptjs'
+
 const data = {
+
+    users: [
+        {
+        name:"paul",
+        email:"paul.lautier@ynov.com",
+        password:bcrypt.hashSync("test",8),
+        isAdmin: true,
+    },
+    {
+        name:"PA",
+        email:"pa@ynov.com",
+        password:bcrypt.hashSync("test",8),
+        isAdmin: false,
+    }
+
+
+    ],
+
+
     products : [
         {
-            _id:'1',
-            restaurantId:'1',
+
+            restaurantId:'6',
             name:'Menu 1',
             image:'/images/p1.jpg',
-            enStock:"1",
-            price:12,
+            enStock:"78",
+            prix:12,
             restaurant:'Mc Donalds',
             rating:4,
             numReviews:100,
@@ -14,12 +35,12 @@ const data = {
 
         },
         {
-            _id:'2',
+
             restaurantId:'2',
             name:'Menu 2',
             image:'/images/p2.jpg',
             enStock:"0",
-            price:10,
+            prix:10,
             restaurant:"O'tacos",
             rating:4.5,
             numReviews:96,
@@ -27,12 +48,25 @@ const data = {
 
         },
         {
-            _id:'3',
+
             restaurantId:'2',
             name:'Menu 3',
             image:'/images/p3.jpg',
             enStock:"5",
-            price:10,
+            prix:10,
+            restaurant:"O'tacos",
+            rating:4,
+            numReviews:66,
+            description:'tacos 3 viandes'
+
+        },
+        {
+
+            restaurantId:'2',
+            name:'Menu 4',
+            image:'/images/p4.jpg',
+            enStock:"5",
+            prix:10,
             restaurant:"O'tacos",
             rating:4,
             numReviews:66,
