@@ -6,7 +6,7 @@ import MessageBox from '../components/MessageBox';
 
 export default function CartScreen(props) {
   const productId = props.match.params.id;
-  const qty = props.location.search
+  const NB = props.location.search
     ? Number(props.location.search.split('=')[1])
     : 1;
   const cart = useSelector((state) => state.cart);
@@ -14,12 +14,12 @@ export default function CartScreen(props) {
   const dispatch = useDispatch();
   useEffect(() => {
     if (productId) {
-      dispatch(addToCart(productId, qty));
+      dispatch(addToCart(productId, NB));
     }
-  }, [dispatch, productId, qty]);
+  }, [dispatch, productId, NB]);
 
   const removeFromCartHandler = (id) => {
-    // delete action
+
     dispatch(removeFromCart(id));
   };
 
@@ -51,7 +51,7 @@ export default function CartScreen(props) {
                   </div>
                   <div>
                     <select
-                      value={item.qty}
+                      value={item.NB}
                       onChange={(e) =>
                         dispatch(
                           addToCart(item.product, Number(e.target.value))
@@ -65,7 +65,7 @@ export default function CartScreen(props) {
                       ))}
                     </select>
                   </div>
-                  <div>{item.price} €</div>
+                  <div>{item.prix} €</div>
                   <div>
                     <button
                       type="button"
@@ -85,8 +85,8 @@ export default function CartScreen(props) {
           <ul>
             <li>
               <h2>
-                Subtotal ({cartItems.reduce((a, c) => a + c.qty, 0)} items) : $
-                {cartItems.reduce((a, c) => a + c.price * c.qty, 0)}
+                Total ({cartItems.reduce((a, c) => a + c.NB, 0)} objets) : 
+                {cartItems.reduce((a, c) => a + c.prix * c.NB, 0)}€
               </h2>
             </li>
             <li>
